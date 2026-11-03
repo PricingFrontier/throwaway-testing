@@ -16,9 +16,9 @@ def edge_join(live_switch, data_input_2): ...
 
 @pipeline.polars(selected_columns=["quote_id", "premium"])
 def premium(edge_join: pl.LazyFrame) -> pl.LazyFrame:
-    raise NotImplementedError(
-        "This node's steps are incomplete. Complete or remove them before running.",
-    )
+    df = edge_join
+    df = df.with_columns(pl.lit(500).alias("premium"))
+    return df
 
 
 @pipeline.output(config="config/quote_response/output.json")

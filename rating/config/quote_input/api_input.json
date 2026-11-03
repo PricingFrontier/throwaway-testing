@@ -1,0 +1,1588 @@
+{
+  "path": "data/quotes_broker_10k.jsonl",
+  "tables": [
+    {
+      "path": "$[:]",
+      "label": "quote_info",
+      "displayPath": "$[:]",
+      "emit": true,
+      "row_id_column": null,
+      "columns": [
+        {
+          "name": "quote_id",
+          "path": "$[:].quote.quote_id",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "quote_version",
+          "path": "$[:].quote.quote_version",
+          "type": "int",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "quote_timestamp",
+          "path": "$[:].quote.quote_timestamp",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "channel",
+          "path": "$[:].quote.channel",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "aggregator_quote_id",
+          "path": "$[:].quote.aggregator_quote_id",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "policy_cover_type",
+          "path": "$[:].policy.cover.type",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "start_date",
+          "path": "$[:].policy.cover.start_date",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "end_date",
+          "path": "$[:].policy.cover.end_date",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "previous_insurer",
+          "path": "$[:].policy.cover.previous_insurer",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "voluntary",
+          "path": "$[:].policy.excess.voluntary",
+          "type": "int",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "compulsory",
+          "path": "$[:].policy.excess.compulsory",
+          "type": "int",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "years",
+          "path": "$[:].policy.ncd.years",
+          "type": "int",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "protected",
+          "path": "$[:].policy.ncd.protected",
+          "type": "bool",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "social_domestic_pleasure",
+          "path": "$[:].policy.usage.social_domestic_pleasure",
+          "type": "bool",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "commuting",
+          "path": "$[:].policy.usage.commuting",
+          "type": "bool",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "annual_mileage",
+          "path": "$[:].policy.usage.annual_mileage",
+          "type": "int",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "frequency",
+          "path": "$[:].policy.payment.frequency",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "title",
+          "path": "$[:].proposer.personal.title",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "first_name",
+          "path": "$[:].proposer.personal.first_name",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "last_name",
+          "path": "$[:].proposer.personal.last_name",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "date_of_birth",
+          "path": "$[:].proposer.personal.date_of_birth",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "gender",
+          "path": "$[:].proposer.personal.gender",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "marital_status",
+          "path": "$[:].proposer.personal.marital_status",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "uk_resident_since_birth",
+          "path": "$[:].proposer.residency.uk_resident_since_birth",
+          "type": "bool",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "uk_resident_since",
+          "path": "$[:].proposer.residency.uk_resident_since",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "is_homeowner",
+          "path": "$[:].proposer.residency.is_homeowner",
+          "type": "bool",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "status",
+          "path": "$[:].proposer.employment.status",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "proposer_licence_type",
+          "path": "$[:].proposer.licence.type",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "held_years",
+          "path": "$[:].proposer.licence.held_years",
+          "type": "int",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "date",
+          "path": "$[:].proposer.licence.date",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "has_unspent_criminal_convictions",
+          "path": "$[:].proposer.disclosures.has_unspent_criminal_convictions",
+          "type": "bool",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "is_main_driver",
+          "path": "$[:].proposer.driving.is_main_driver",
+          "type": "bool",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "relationship_to_proposer",
+          "path": "$[:].proposer.driving.relationship_to_proposer",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "access_to_other_vehicles",
+          "path": "$[:].proposer.driving.access_to_other_vehicles",
+          "type": "bool",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "registration_number",
+          "path": "$[:].vehicle.identity.registration_number",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "make",
+          "path": "$[:].vehicle.identity.make",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "model",
+          "path": "$[:].vehicle.identity.model",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "variant",
+          "path": "$[:].vehicle.identity.variant",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "year_of_manufacture",
+          "path": "$[:].vehicle.spec.year_of_manufacture",
+          "type": "int",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "year_of_registration",
+          "path": "$[:].vehicle.spec.year_of_registration",
+          "type": "int",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "body_type",
+          "path": "$[:].vehicle.spec.body_type",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "fuel_type",
+          "path": "$[:].vehicle.spec.fuel_type",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "transmission",
+          "path": "$[:].vehicle.spec.transmission",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "engine_power_bhp",
+          "path": "$[:].vehicle.spec.engine_power_bhp",
+          "type": "int",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "number_of_doors",
+          "path": "$[:].vehicle.spec.number_of_doors",
+          "type": "int",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "number_of_seats",
+          "path": "$[:].vehicle.spec.number_of_seats",
+          "type": "int",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "is_imported",
+          "path": "$[:].vehicle.spec.is_imported",
+          "type": "bool",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "is_right_hand_drive",
+          "path": "$[:].vehicle.spec.is_right_hand_drive",
+          "type": "bool",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "insurance_group",
+          "path": "$[:].vehicle.rating.insurance_group",
+          "type": "int",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "estimated_value",
+          "path": "$[:].vehicle.rating.estimated_value",
+          "type": "int",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "alarm",
+          "path": "$[:].vehicle.security.alarm",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "immobiliser",
+          "path": "$[:].vehicle.security.immobiliser",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "tracker",
+          "path": "$[:].vehicle.security.tracker",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "overnight_location",
+          "path": "$[:].vehicle.keeping.overnight_location",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "daytime_location",
+          "path": "$[:].vehicle.keeping.daytime_location",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "owner",
+          "path": "$[:].vehicle.ownership.owner",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "registered_keeper",
+          "path": "$[:].vehicle.ownership.registered_keeper",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "purchase_date",
+          "path": "$[:].vehicle.ownership.purchase_date",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "current_mileage",
+          "path": "$[:].vehicle.ownership.current_mileage",
+          "type": "int",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "address_current_house_number_or_name",
+          "path": "$[:].address.current.house_number_or_name",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "address_current_street",
+          "path": "$[:].address.current.street",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "address_current_city",
+          "path": "$[:].address.current.city",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "address_current_postcode",
+          "path": "$[:].address.current.postcode",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "address_previous_house_number_or_name",
+          "path": "$[:].address.previous.house_number_or_name",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "address_previous_street",
+          "path": "$[:].address.previous.street",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "address_previous_city",
+          "path": "$[:].address.previous.city",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "address_previous_postcode",
+          "path": "$[:].address.previous.postcode",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "years_at_address",
+          "path": "$[:].address.years_at_address",
+          "type": "int",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "months_at_address",
+          "path": "$[:].address.months_at_address",
+          "type": "int",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "breakdown_cover",
+          "path": "$[:].add_ons.breakdown_cover",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "legal_expenses",
+          "path": "$[:].add_ons.legal_expenses",
+          "type": "bool",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "motor_legal_protection",
+          "path": "$[:].add_ons.motor_legal_protection",
+          "type": "bool",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "key_cover",
+          "path": "$[:].add_ons.key_cover",
+          "type": "bool",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "courtesy_car",
+          "path": "$[:].add_ons.courtesy_car",
+          "type": "bool",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "windscreen_cover",
+          "path": "$[:].add_ons.windscreen_cover",
+          "type": "bool",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "excess_protection",
+          "path": "$[:].add_ons.excess_protection",
+          "type": "bool",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "no_claims_step_back",
+          "path": "$[:].add_ons.no_claims_step_back",
+          "type": "bool",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "personal_accident",
+          "path": "$[:].add_ons.personal_accident",
+          "type": "bool",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "personal_belongings",
+          "path": "$[:].add_ons.personal_belongings",
+          "type": "bool",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "tools_in_transit",
+          "path": "$[:].add_ons.tools_in_transit",
+          "type": "bool",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "panel_premiums_athena_underwriting_gold",
+          "path": "$[:].panel_premiums.athena_underwriting.gold",
+          "type": "float",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "panel_premiums_athena_underwriting_silver",
+          "path": "$[:].panel_premiums.athena_underwriting.silver",
+          "type": "float",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "panel_premiums_athena_underwriting_bronze",
+          "path": "$[:].panel_premiums.athena_underwriting.bronze",
+          "type": "float",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "panel_premiums_meridian_mutual_gold",
+          "path": "$[:].panel_premiums.meridian_mutual.gold",
+          "type": "float",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "panel_premiums_meridian_mutual_silver",
+          "path": "$[:].panel_premiums.meridian_mutual.silver",
+          "type": "float",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "panel_premiums_meridian_mutual_bronze",
+          "path": "$[:].panel_premiums.meridian_mutual.bronze",
+          "type": "float",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "panel_premiums_pinnacle_cover_gold",
+          "path": "$[:].panel_premiums.pinnacle_cover.gold",
+          "type": "float",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "panel_premiums_pinnacle_cover_silver",
+          "path": "$[:].panel_premiums.pinnacle_cover.silver",
+          "type": "float",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "panel_premiums_pinnacle_cover_bronze",
+          "path": "$[:].panel_premiums.pinnacle_cover.bronze",
+          "type": "float",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "panel_premiums_sentinel_insurance_gold",
+          "path": "$[:].panel_premiums.sentinel_insurance.gold",
+          "type": "float",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "panel_premiums_sentinel_insurance_silver",
+          "path": "$[:].panel_premiums.sentinel_insurance.silver",
+          "type": "float",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "panel_premiums_sentinel_insurance_bronze",
+          "path": "$[:].panel_premiums.sentinel_insurance.bronze",
+          "type": "float",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "primary_occupation",
+          "path": "$[:].proposer.employment.primary_occupation",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "primary_occupation_industry",
+          "path": "$[:].proposer.employment.primary_occupation_industry",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "engine_size_cc",
+          "path": "$[:].vehicle.spec.engine_size_cc",
+          "type": "int",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "panel_premiums_vanguard_specialty_gold",
+          "path": "$[:].panel_premiums.vanguard_specialty.gold",
+          "type": "float",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "panel_premiums_vanguard_specialty_silver",
+          "path": "$[:].panel_premiums.vanguard_specialty.silver",
+          "type": "float",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "panel_premiums_vanguard_specialty_bronze",
+          "path": "$[:].panel_premiums.vanguard_specialty.bronze",
+          "type": "float",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "restrictions",
+          "path": "$[:].proposer.licence.restrictions",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "business_use",
+          "path": "$[:].policy.usage.business_use",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "business_mileage",
+          "path": "$[:].policy.usage.business_mileage",
+          "type": "int",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "medical_condition",
+          "path": "$[:].proposer.disclosures.medical_condition",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "secondary_occupation",
+          "path": "$[:].proposer.employment.secondary_occupation",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        }
+      ]
+    },
+    {
+      "path": "$[:].additional_drivers[:]",
+      "label": "additional_drivers",
+      "displayPath": "$[:].additional_drivers[:]",
+      "emit": false,
+      "row_id_column": null,
+      "columns": [
+        {
+          "name": "title",
+          "path": "$[:].additional_drivers[:].personal.title",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "first_name",
+          "path": "$[:].additional_drivers[:].personal.first_name",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "last_name",
+          "path": "$[:].additional_drivers[:].personal.last_name",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "date_of_birth",
+          "path": "$[:].additional_drivers[:].personal.date_of_birth",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "gender",
+          "path": "$[:].additional_drivers[:].personal.gender",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "marital_status",
+          "path": "$[:].additional_drivers[:].personal.marital_status",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "uk_resident_since_birth",
+          "path": "$[:].additional_drivers[:].residency.uk_resident_since_birth",
+          "type": "bool",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "is_homeowner",
+          "path": "$[:].additional_drivers[:].residency.is_homeowner",
+          "type": "bool",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "status",
+          "path": "$[:].additional_drivers[:].employment.status",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "primary_occupation",
+          "path": "$[:].additional_drivers[:].employment.primary_occupation",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "primary_occupation_industry",
+          "path": "$[:].additional_drivers[:].employment.primary_occupation_industry",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "type",
+          "path": "$[:].additional_drivers[:].licence.type",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "held_years",
+          "path": "$[:].additional_drivers[:].licence.held_years",
+          "type": "int",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "date",
+          "path": "$[:].additional_drivers[:].licence.date",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "has_unspent_criminal_convictions",
+          "path": "$[:].additional_drivers[:].disclosures.has_unspent_criminal_convictions",
+          "type": "bool",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "is_main_driver",
+          "path": "$[:].additional_drivers[:].driving.is_main_driver",
+          "type": "bool",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "relationship_to_proposer",
+          "path": "$[:].additional_drivers[:].driving.relationship_to_proposer",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "access_to_other_vehicles",
+          "path": "$[:].additional_drivers[:].driving.access_to_other_vehicles",
+          "type": "bool",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "restrictions",
+          "path": "$[:].additional_drivers[:].licence.restrictions",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "medical_condition",
+          "path": "$[:].additional_drivers[:].disclosures.medical_condition",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "uk_resident_since",
+          "path": "$[:].additional_drivers[:].residency.uk_resident_since",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "secondary_occupation",
+          "path": "$[:].additional_drivers[:].employment.secondary_occupation",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        }
+      ]
+    },
+    {
+      "path": "$[:].proposer.claims[:]",
+      "label": "proposer_claims",
+      "displayPath": "$[:].proposer.claims[:]",
+      "emit": false,
+      "row_id_column": null,
+      "columns": [
+        {
+          "name": "claim_date",
+          "path": "$[:].proposer.claims[:].claim_date",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "claim_type",
+          "path": "$[:].proposer.claims[:].claim_type",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "fault",
+          "path": "$[:].proposer.claims[:].fault",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "status",
+          "path": "$[:].proposer.claims[:].status",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "amount_paid",
+          "path": "$[:].proposer.claims[:].amount_paid",
+          "type": "float",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "personal_injury_claimed",
+          "path": "$[:].proposer.claims[:].personal_injury_claimed",
+          "type": "bool",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "ncd_affected",
+          "path": "$[:].proposer.claims[:].ncd_affected",
+          "type": "bool",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        }
+      ]
+    },
+    {
+      "path": "$[:].proposer.convictions[:]",
+      "label": "proposer_convictions",
+      "displayPath": "$[:].proposer.convictions[:]",
+      "emit": false,
+      "row_id_column": null,
+      "columns": [
+        {
+          "name": "conviction_code",
+          "path": "$[:].proposer.convictions[:].conviction_code",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "conviction_date",
+          "path": "$[:].proposer.convictions[:].conviction_date",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "points",
+          "path": "$[:].proposer.convictions[:].points",
+          "type": "int",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "fine_amount",
+          "path": "$[:].proposer.convictions[:].fine_amount",
+          "type": "int",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "is_disqualified",
+          "path": "$[:].proposer.convictions[:].is_disqualified",
+          "type": "bool",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "ban_months",
+          "path": "$[:].proposer.convictions[:].ban_months",
+          "type": "int",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        }
+      ]
+    },
+    {
+      "path": "$[:].vehicle.modifications[:]",
+      "label": "modifications",
+      "displayPath": "$[:].vehicle.modifications[:]",
+      "emit": false,
+      "row_id_column": null,
+      "columns": [
+        {
+          "name": "value",
+          "path": "$[:].vehicle.modifications[:].$value",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        }
+      ]
+    },
+    {
+      "path": "$[:].additional_drivers[:].claims[:]",
+      "label": "additional_drivers_claims",
+      "displayPath": "$[:].additional_drivers[:].claims[:]",
+      "emit": false,
+      "row_id_column": null,
+      "columns": [
+        {
+          "name": "claim_date",
+          "path": "$[:].additional_drivers[:].claims[:].claim_date",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "claim_type",
+          "path": "$[:].additional_drivers[:].claims[:].claim_type",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "fault",
+          "path": "$[:].additional_drivers[:].claims[:].fault",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "status",
+          "path": "$[:].additional_drivers[:].claims[:].status",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "amount_paid",
+          "path": "$[:].additional_drivers[:].claims[:].amount_paid",
+          "type": "float",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "personal_injury_claimed",
+          "path": "$[:].additional_drivers[:].claims[:].personal_injury_claimed",
+          "type": "bool",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "ncd_affected",
+          "path": "$[:].additional_drivers[:].claims[:].ncd_affected",
+          "type": "bool",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        }
+      ]
+    },
+    {
+      "path": "$[:].additional_drivers[:].convictions[:]",
+      "label": "additional_drivers_convictions",
+      "displayPath": "$[:].additional_drivers[:].convictions[:]",
+      "emit": false,
+      "row_id_column": null,
+      "columns": [
+        {
+          "name": "conviction_code",
+          "path": "$[:].additional_drivers[:].convictions[:].conviction_code",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "conviction_date",
+          "path": "$[:].additional_drivers[:].convictions[:].conviction_date",
+          "type": "str",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "points",
+          "path": "$[:].additional_drivers[:].convictions[:].points",
+          "type": "int",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "fine_amount",
+          "path": "$[:].additional_drivers[:].convictions[:].fine_amount",
+          "type": "int",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "is_disqualified",
+          "path": "$[:].additional_drivers[:].convictions[:].is_disqualified",
+          "type": "bool",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        },
+        {
+          "name": "ban_months",
+          "path": "$[:].additional_drivers[:].convictions[:].ban_months",
+          "type": "int",
+          "status": "Inferred",
+          "selected": true,
+          "levels": null,
+          "origin": "inferred",
+          "key": false
+        }
+      ]
+    }
+  ]
+}

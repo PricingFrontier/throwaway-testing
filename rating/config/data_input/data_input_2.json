@@ -1,0 +1,7 @@
+{
+  "format": "parquet",
+  "inputType": "file",
+  "mode": "scan",
+  "path": "data/competitor_insight_10k.parquet",
+  "steps": []
+}

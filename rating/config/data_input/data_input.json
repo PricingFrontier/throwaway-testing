@@ -1,0 +1,7 @@
+{
+  "format": "parquet",
+  "inputType": "file",
+  "mode": "scan",
+  "path": "data/nb_batch.parquet",
+  "steps": []
+}

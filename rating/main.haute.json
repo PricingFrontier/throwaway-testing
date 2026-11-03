@@ -1,7 +1,17 @@
 {
   "positions": {
     "api_input": {"x": 99, "y": 220},
-    "output": {"x": 1111, "y": 214},
-    "premium": {"x": 597, "y": 224}
-  }
+    "data_input": {"x": 98, "y": 109},
+    "data_input_2": {"x": 422, "y": -60},
+    "edge_join": {"x": 758, "y": -21},
+    "live_switch": {"x": 447, "y": 144},
+    "modelling": {"x": 843, "y": -317},
+    "output": {"x": 1713, "y": 132},
+    "premium": {"x": 1199, "y": 142}
+  },
+  "sources": [
+    "live",
+    "nb_batch"
+  ],
+  "active_source": "nb_batch"
 }

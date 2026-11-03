@@ -1,0 +1,40 @@
+{
+  "algorithm": "tboost",
+  "evaluation": {
+    "schema_version": 1,
+    "strategy": "random",
+    "seed": 42,
+    "validation": {
+      "method": "single",
+      "size": 0.2
+    }
+  },
+  "feature_columns": [
+    "channel",
+    "policy_cover_type",
+    "voluntary",
+    "ncd_years",
+    "annual_mileage",
+    "body_type",
+    "transmission",
+    "number_of_doors",
+    "insurance_group"
+  ],
+  "loss_function": "Gamma",
+  "metrics": [
+    "gini",
+    "gamma_deviance"
+  ],
+  "params": {
+    "n_trees": 4000,
+    "max_interaction_order": 3,
+    "n_bags": 8,
+    "interaction_gain_hurdle": 2,
+    "prune": true,
+    "prune_main_effects": true,
+    "band_tolerance": 0.75,
+    "graduate": true
+  },
+  "target": "avg_cheapest_5",
+  "task": "regression"
+}

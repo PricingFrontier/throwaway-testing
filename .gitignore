@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.venv/
+
+# Haute
+.env
+.haute/
+impact_report.md
+test_quotes_report.md
+.haute_cache/
+mlruns/
+/data/
+/outputs/
+/.cache/
+.haute_build/

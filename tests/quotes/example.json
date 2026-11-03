@@ -1,0 +1,10 @@
+[
+  {
+    "_description": "Example quote - replace the input and add the outputs you expect",
+    "input": {
+      "id": 1,
+      "field_a": "value",
+      "field_b": 42
+    }
+  }
+]

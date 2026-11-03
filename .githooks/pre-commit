@@ -1,0 +1,48 @@
+#!/bin/sh
+# Haute pre-commit hook - fix, format and check the staged Python with ruff.
+# Installed by `haute init`. To reinstall: cp .githooks/pre-commit .git/hooks/
+#
+# Only what is staged is changed: a file's unstaged changes stay out of the commit. A
+# problem ruff cannot fix safely stops the commit; fix it, or end its line with
+# `# noqa: <code>` to keep it as it is.
+
+# core.quotePath=false lists a non-ASCII name as it is; git still quotes a name holding a
+# quote, a backslash or a control character, which this hook refuses rather than misread.
+files=$(git -c core.quotePath=false diff --cached --name-only --diff-filter=ACMR -- '*.py')
+[ -z "$files" ] && exit 0
+
+work=$(mktemp -d) || exit 1
+trap 'rm -rf "$work"' EXIT
+status=0
+while IFS= read -r file; do
+    case $file in
+        '"'*)
+            echo "pre-commit: rename $file: its name holds a character git quotes" >&2
+            status=1
+            continue
+            ;;
+    esac
+    git show ":$file" > "$work/staged" || { status=1; continue; }
+    if ! uv run ruff check --fix --exit-zero --quiet --stdin-filename "$file" \
+            < "$work/staged" > "$work/checked" ||
+        ! uv run ruff format --stdin-filename "$file" < "$work/checked" > "$work/fixed"
+    then
+        echo "pre-commit: ruff could not fix and format $file" >&2
+        status=1
+        continue
+    fi
+    if ! cmp -s "$work/staged" "$work/fixed"; then
+        # Nothing unstaged: the working tree takes the result as the index does.
+        git diff --quiet -- "$file" && whole=yes || whole=no
+        mode=$(git ls-files --stage -- "$file" | cut -d ' ' -f 1)
+        blob=$(git hash-object -w --stdin < "$work/fixed") &&
+            git update-index --cacheinfo "$mode,$blob,$file" || { status=1; continue; }
+        [ "$whole" = yes ] && git checkout-index --force -- "$file"
+    fi
+    # What is left, at the lines of the content just written.
+    uv run ruff check --quiet --output-format=concise --stdin-filename "$file" \
+        < "$work/fixed" >&2 || status=1
+done <<EOF
+$files
+EOF
+exit $status

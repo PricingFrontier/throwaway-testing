@@ -1,0 +1,30 @@
+[project]
+name = "throwaway-testing"
+pipeline = "rating/main.py"
+
+[deploy]
+target = "databricks"
+model_name = "throwaway-testing"
+endpoint_name = "throwaway-testing"
+
+[deploy.databricks]
+experiment_name = "/Shared/haute/throwaway-testing"
+catalog = "main"
+schema = "pricing"
+serving_workload_size = "Small"
+serving_scale_to_zero = true
+
+[safety]
+# `haute impact` compares staging with production on these quotes. Without a
+# sample it compares the test quotes; commit a Parquet sample of your book (not
+# under data/, which is gitignored) and name it here to compare that instead:
+# impact_dataset = "tests/impact/portfolio_sample.parquet"
+
+[safety.approval]
+min_approvers = 2
+
+[ci]
+provider = "github"
+
+[ci.staging]
+endpoint_suffix = "-staging"

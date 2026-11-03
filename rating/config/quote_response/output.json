@@ -1,0 +1,16 @@
+{
+  "outputMapping": [
+    {
+      "source_port": "premium",
+      "source_column": "quote_id",
+      "output_path": "$[:].quote_id",
+      "enabled": true
+    },
+    {
+      "source_port": "premium",
+      "source_column": "premium",
+      "output_path": "$[:].premium",
+      "enabled": true
+    }
+  ]
+}
